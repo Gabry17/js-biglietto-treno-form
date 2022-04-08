@@ -54,6 +54,14 @@ button{
 }
 
 /* footer */
+footer{
+    display: none;
+}
+
+.block{
+    display: block;
+}
+
 .nome{
     background-color: lightgray;
     width: 40%;

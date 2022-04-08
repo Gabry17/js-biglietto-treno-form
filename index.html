@@ -19,36 +19,32 @@
 
         <!-- dati -->
         <section class="sect-dati">
-            <form action="">
+            <div class="input">
+                <div class="col">
+                    <label for="name">Nome e Cognome</label>
+                    <input id="name" type="text" placeholder="inserire nome e cognome">
+                </div>
 
-                <div class="input">
-                    <div class="col">
-                        <label for="name">Nome e Cognome</label>
-                        <input id="name" type="text" placeholder="inserire nome e cognome">
-                    </div>
+                <div class="col">
+                    <label for="km">Km da percorrere</label>
+                    <input id="km" type="text" placeholder="inserire nome e cognome">
+                </div>
 
-                    <div class="col">
-                        <label for="km">Km da percorrere</label>
-                        <input type="text" placeholder="inserire nome e cognome">
-                    </div>
-
-                    <div class="col">
-                        <label for="age">Fascia d'età</label>
-                        <select name="age" id="age">
-                            <option value=""></option>
-                            <option value="maggiorenne">Maggiorenne</option>
-                            <option value="intero">Intero</option>
-                            <option value="over 65">Over 65</option>
+                <div class="col">
+                    <label for="age">Fascia d'età</label>
+                    <select name="age" id="age">
+                        <option value=""></option>
+                        <option id="min" value="minorenne">Minorenne</option>
+                        <option id="normal" value="intero">Maggiorenne</option>
+                        <option id="over65" value="over 65">Over 65</option>
                     </select>
-                    </div>
                 </div>
+            </div>
 
-                <div class="btn">
-                    <button id="btn-1">Genera</button>
-                    <button id="btn-2">Annulla</button>
-                </div>
-
-            </form>
+            <div class="btn">
+                <button id="btn-1">Genera</button>
+                <button id="btn-2">Annulla</button>
+            </div>
         </section>
         <!-- /dati -->
 
@@ -56,7 +52,7 @@
     <!-- /MAIN -->
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="foot">
 
         <h2>IL TUO BIGLIETTO</h2>
 
@@ -84,7 +80,7 @@
                     </div>
                     <div class="col-2">
                         <p class="title">COSTO BIGLIETTO</p>
-                        <p></p>
+                        <p id="price"></p>
                     </div>
                 </div>
             </div>
