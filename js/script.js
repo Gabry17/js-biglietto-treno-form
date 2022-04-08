@@ -22,7 +22,7 @@ firstBtn.addEventListener("click",
 
         //eta
         let inputAge = document.getElementById('age').value;
-
+        console.log(inputAge);
 
         //inserisco valore input nella loro casella
         //nome
@@ -55,23 +55,15 @@ firstBtn.addEventListener("click",
         let normalPrice = 0.21 * inputKm;
         console.log(normalPrice);
 
-        
-        //eta
-        let selectAge = document.getElementById('age');
-        let option1 = document.getElementById('min');
-        console.log(option1);
-        let option3 = document.getElementById('over65');
-        console.log(option3);
-
         //sconto
         let finalPrice;
         let sale20 = normalPrice * 20 / 100;
         let sale40 = normalPrice * 40 / 100;
 
-        if (selectAge == option1) {
+        if (inputAge == "minorenne") {
             finalPrice = normalPrice - sale20;
             console.log(finalPrice);
-        } else if (selectAge == option3) {
+        } else if (inputAge == "over 65") {
             finalPrice = normalPrice - sale40;
             console.log(finalPrice);
         } else {
